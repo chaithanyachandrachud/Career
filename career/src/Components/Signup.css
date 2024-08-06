@@ -1,0 +1,121 @@
+/* Overall container styling */
+.signup-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #03346E;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Flex container for layout */
+  .signup-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Signup form container */
+  .signup-form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  /* Signup form styling */
+  .signup-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  .signup-form h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Image container styling */
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+    transition: transform 0.5s ease, filter 0.5s ease;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.05);
+    filter: brightness(100%);
+  }
+  
+  /* Link to login page */
+  .login-link {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  .login-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .login-link a:hover {
+    color: #0056b3;
+  }
+  

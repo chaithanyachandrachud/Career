@@ -1,0 +1,151 @@
+.about-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 900px;
+  }
+  
+  .hero-section {
+    text-align: center;
+    background-image: url('../assets/path.jpg'); /* Adjust the path as necessary */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .hero-section h1, .hero-section p {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .hero-section h1 {
+    animation-delay: 0.2s;
+  }
+  
+  .hero-section p {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .intro-section, .mission-section, .vision-section, .values-section, .contact-section {
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .intro-section {
+    animation-delay: 0.6s;
+  }
+  
+  .mission-section {
+    animation-delay: 0.8s;
+  }
+  
+  .vision-section {
+    animation-delay: 1s;
+  }
+  
+  .values-section {
+    animation-delay: 1.2s;
+  }
+  
+  .contact-section {
+    animation-delay: 1.4s;
+  }
+  
+  .intro-section h2, .mission-section h2, .vision-section h2, .values-section h2, .contact-section h2 {
+    font-size: 2.2em;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .intro-section p, .mission-section p, .vision-section p, .values-section ul, .contact-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .values-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .values-section li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInRight 0.6s forwards;
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .team-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1.6s;
+  }
+  
+  .contact-section {
+    text-align: center;
+  }
+  
+  .contact-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-link:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
