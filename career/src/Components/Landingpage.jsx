@@ -35,7 +35,6 @@ function LandingPage() {
         </video>
         <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
           <h2 className="text-4xl font-extrabold text-white leading-tight text-center max-w-4xl px-4">
-            Discover Your Future with Us
           </h2>
         </div>
       </header>
