@@ -7,6 +7,7 @@ import About from './Components/About';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Contact from './Components/Contact';
+import Tech from './Components/Tech';
 const App=()=>{
   return(
     <Router>
@@ -17,6 +18,8 @@ const App=()=>{
       <Route path="Login" element={<Login />} />
       <Route path="Signup" element={<Signup />} />
       <Route path="Contact" element={<Contact />} />
+      <Route path="Tech" element={<Tech />} />
+
 
 
       <Route path="/" element={<Landingpage />} />
