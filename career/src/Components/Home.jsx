@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+
+import { useNavigate } from 'react-router-dom';
+import Tech from './Tech';
+
+
 import './Home.css';
 
 function Home() {
@@ -10,8 +15,18 @@ function Home() {
     career: '',
   });
 
+
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleNext = () => {
+    if (step === 4) {
+      navigateToCareerPage(); // Navigate when the final step is reached
+    } else {
+      setStep(step + 1);
+    }
   const handleNext = () => {
     setStep(step + 1);
+
   };
 
   const handlePrev = () => {
@@ -22,6 +37,25 @@ function Home() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+
+  const navigateToCareerPage = () => {
+    switch (formData.career) {
+      case 'Technology and Engineering':
+        navigate('/Tech');
+        break;
+      case 'Healthcare and Medicine':
+        navigate('/healthcare');
+        break;
+      case 'Business and Finance':
+        navigate('/business');
+        break;
+      // Add cases for other careers
+      default:
+        break;
+    }
+  };
+
+
   const renderFormStep = () => {
     switch (step) {
       case 1:
@@ -29,7 +63,11 @@ function Home() {
           <div className="form-step">
             <h2>Which class are you in? 🎓</h2>
             <div className="options">
+
+              {['10th', '11th', '12th'].map((option) => (
+
               {['10th', '11th', '12th',].map((option) => (
+
                 <button
                   key={option}
                   name="class"
@@ -123,6 +161,17 @@ function Home() {
               Previous
             </button>
           )}
+
+          <button
+            className="nav-button"
+            onClick={handleNext}
+            disabled={
+              !formData[step === 1 ? 'class' : step === 2 ? 'stream' : step === 3 ? 'identity' : 'career']
+            }
+          >
+            {step < 4 ? 'Next' : 'Submit'}
+          </button>
+
           {step < 4 && (
             <button
               className="nav-button"
@@ -141,6 +190,7 @@ function Home() {
               Save & Continue
             </button>
           )}
+
         </div>
       </div>
     </div>
