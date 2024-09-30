@@ -1,4 +1,4 @@
-
+/* Home.css */
 .home-container {
   font-family: 'Arial', sans-serif;
   background-color: #f5f7fa;
@@ -105,4 +105,4 @@
 .nav-button:disabled {
   background: #6c757d;
   cursor: not-allowed;
-
+}

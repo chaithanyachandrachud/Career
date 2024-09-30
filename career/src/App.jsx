@@ -8,6 +8,13 @@ import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Contact from './Components/Contact';
 import Tech from './Components/Tech';
+import Software from './Components/Software';
+import Health from './Components/Health';
+import Business from './Components/Business';
+
+
+
+
 const App=()=>{
   return(
     <Router>
@@ -19,8 +26,9 @@ const App=()=>{
       <Route path="Signup" element={<Signup />} />
       <Route path="Contact" element={<Contact />} />
       <Route path="Tech" element={<Tech />} />
-
-
+      <Route path="Software" element={<Software/>} />
+      <Route path="Health" element={<Health/>} />
+      <Route path="Business" element={<Business/>} />
 
       <Route path="/" element={<Landingpage />} />
 

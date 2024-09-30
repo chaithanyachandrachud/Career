@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-
 import { useNavigate } from 'react-router-dom';
 import Tech from './Tech';
-
-
 import './Home.css';
 
 function Home() {
@@ -15,7 +12,6 @@ function Home() {
     career: '',
   });
 
-
   const navigate = useNavigate(); // Initialize useNavigate
 
   const handleNext = () => {
@@ -24,9 +20,6 @@ function Home() {
     } else {
       setStep(step + 1);
     }
-  const handleNext = () => {
-    setStep(step + 1);
-
   };
 
   const handlePrev = () => {
@@ -37,24 +30,22 @@ function Home() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-
   const navigateToCareerPage = () => {
     switch (formData.career) {
       case 'Technology and Engineering':
         navigate('/Tech');
         break;
       case 'Healthcare and Medicine':
-        navigate('/healthcare');
+        navigate('/Health');
         break;
       case 'Business and Finance':
-        navigate('/business');
+        navigate('/Business');
         break;
       // Add cases for other careers
       default:
         break;
-    }
+    } 
   };
-
 
   const renderFormStep = () => {
     switch (step) {
@@ -63,11 +54,7 @@ function Home() {
           <div className="form-step">
             <h2>Which class are you in? 🎓</h2>
             <div className="options">
-
-              {['10th', '11th', '12th'].map((option) => (
-
-              {['10th', '11th', '12th',].map((option) => (
-
+              {['12th'].map((option) => (
                 <button
                   key={option}
                   name="class"
@@ -161,7 +148,6 @@ function Home() {
               Previous
             </button>
           )}
-
           <button
             className="nav-button"
             onClick={handleNext}
@@ -171,26 +157,6 @@ function Home() {
           >
             {step < 4 ? 'Next' : 'Submit'}
           </button>
-
-          {step < 4 && (
-            <button
-              className="nav-button"
-              onClick={handleNext}
-              disabled={!formData[step === 1 ? 'class' : step === 2 ? 'stream' : 'identity']}
-            >
-              Next
-            </button>
-          )}
-          {step === 4 && (
-            <button
-              className="nav-button"
-              onClick={() => alert('Form submitted!')}
-              disabled={!formData.career}
-            >
-              Save & Continue
-            </button>
-          )}
-
         </div>
       </div>
     </div>
