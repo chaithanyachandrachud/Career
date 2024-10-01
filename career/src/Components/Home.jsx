@@ -41,6 +41,26 @@ function Home() {
       case 'Business and Finance':
         navigate('/Business');
         break;
+        case 'Arts and Media':
+          navigate('/Arts');
+        break;
+        case 'Education and Training':
+          navigate('/Education');
+        break;
+        case 'Science and Research':
+          navigate('/Science');
+          break;
+        case 'Law and Public Policy':
+          navigate('/Law');
+          break;
+        case 'Skilled Trades and Services':
+          navigate('/Skill');
+        
+
+
+          
+
+      
       // Add cases for other careers
       default:
         break;

@@ -11,8 +11,11 @@ import Tech from './Components/Tech';
 import Software from './Components/Software';
 import Health from './Components/Health';
 import Business from './Components/Business';
-
-
+import Arts from './Components/Arts';
+import Education from './Components/Education';
+import Science from './Components/Science';
+import Law from './Components/Law';
+import Skill from './Components/Skill';
 
 
 const App=()=>{
@@ -29,6 +32,11 @@ const App=()=>{
       <Route path="Software" element={<Software/>} />
       <Route path="Health" element={<Health/>} />
       <Route path="Business" element={<Business/>} />
+      <Route path="Arts" element={<Arts/>} />
+      <Route path="Education" element={<Education/>} />
+      <Route path="Science" element={<Science/>} />
+      <Route path="Law" element={<Law/>} />
+      <Route path="Skill" element={<Skill/>} />
 
       <Route path="/" element={<Landingpage />} />
 

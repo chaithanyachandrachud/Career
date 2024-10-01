@@ -28,14 +28,13 @@ function LandingPage() {
           </ul>
         </div>
       </nav>
-      <header className="relative h-[70vh] w-[100vh]   overflow-hidden flex items-center justify-center">
-        <video className="w-full h-full object-cover absolute inset-0" autoPlay loop muted>
-          <source src={careerVideo} type="video/mp4" />
-          Your browser does not support the video tag.
+      <header className="relative h-[70vh] w-[100vw] overflow-hidden flex items-center justify-center">
+  <video className="w-[60%] h-[100%] object-cover" autoPlay loop muted>
+    <source src={careerVideo} type="video/mp4" />
+    Your browser does not support the video tag.
         </video>
         <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
           <h2 className="text-4xl font-extrabold text-white leading-tight text-center max-w-4xl px-4">
-            Discover Your Future with Us
           </h2>
         </div>
       </header>
@@ -44,7 +43,7 @@ function LandingPage() {
           <h3 className="text-4xl mb-6 font-semibold text-blue-600">About Us</h3>
           <p className="text-lg leading-relaxed">
             At Career Craft, we provide comprehensive guidance to help students
-            choose the right career paths after 10th and +2. Our expert advice
+            choose the right career paths after +2. Our expert advice
             and tools are designed to assist you in making informed decisions
             for a successful future.
           </p>
