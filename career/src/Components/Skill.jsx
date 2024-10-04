@@ -10,13 +10,13 @@ function Skill() {
   ];
 
   return (
-    <div className="tech-container"> {/* Reusing the same class name "tech-container" */}
+    <div className="tech-container">
       <h1>Skilled Trades Careers</h1>
       <p>Explore the rewarding opportunities available in skilled trades. Choose a path that aligns with your skills and interests.</p>
 
-      <div className="careers-container"> {/* Reusing the same class name "careers-container" */}
+      <div className="careers-container"> 
         {careers.map((career) => (
-          <div key={career.title} className="career-card"> {/* Reusing "career-card" */}
+          <div key={career.title} className="career-card">
             <div className="career-icon">{career.icon}</div>
             <div className="career-info">
               <h3>{career.title}</h3>

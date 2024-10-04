@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Home from './Components/Home';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Landingpage from './Components/Landingpage';
 import About from './Components/About';
@@ -16,6 +16,7 @@ import Education from './Components/Education';
 import Science from './Components/Science';
 import Law from './Components/Law';
 import Skill from './Components/Skill';
+import Parent from './Components/Parent';
 
 
 const App=()=>{
@@ -37,7 +38,7 @@ const App=()=>{
       <Route path="Science" element={<Science/>} />
       <Route path="Law" element={<Law/>} />
       <Route path="Skill" element={<Skill/>} />
-
+      <Route path="Parent" element={<Parent/>} />
       <Route path="/" element={<Landingpage />} />
 
 
