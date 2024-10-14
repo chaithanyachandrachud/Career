@@ -28,6 +28,7 @@ function LandingPage() {
             style={{
               fontSize: "2rem",
               letterSpacing: "3px",
+               color: "black",
               transition: "transform 0.3s",
             }}
           >
@@ -38,12 +39,12 @@ function LandingPage() {
               <Link
                 to="/feedback"
                 style={{
-                  color: "white",
+                  color: "black",
                   fontSize: "1.2rem",
                   transition: "color 0.3s, transform 0.3s",
                 }}
-                onMouseEnter={(e) => (e.target.style.color = "#FFD700")}
-                onMouseLeave={(e) => (e.target.style.color = "white")}
+                onMouseEnter={(e) => (e.target.style.color = "#FFD7")}
+                onMouseLeave={(e) => (e.target.style.color = "black")}
               >
                 Feedback
               </Link>
@@ -54,6 +55,7 @@ function LandingPage() {
                 style={{
                   color: "white",
                   fontSize: "1.2rem",
+                   color: "black",
                   transition: "color 0.3s, transform 0.3s",
                 }}
                 onMouseEnter={(e) => (e.target.style.color = "#FFD700")}
@@ -224,6 +226,8 @@ function LandingPage() {
               className="mt-8"
               style={{
                 padding: "0.8rem 2rem",
+                height: "100px",
+                width:"200px",
                 background: "linear-gradient(to right, #36D1DC, #5B86E5)",
                 color: "#fff",
                 border: "none",
@@ -232,7 +236,7 @@ function LandingPage() {
                 cursor: "pointer",
                 fontSize: "1.2rem",
                 transition: "transform 0.3s, box-shadow 0.3s",
-              }}
+              }}c 
               onMouseEnter={(e) => {
                 e.target.style.transform = "scale(1.1)";
                 e.target.style.boxShadow =
