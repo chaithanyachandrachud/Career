@@ -24,6 +24,11 @@ import Electrical from './Components/Electrical';
 import Mech from './Components/Mech';
 import Civil from './Components/Civil';
 import Robo from "./Components/Robo";
+import Network from './Components/Network';
+import Cloud from './Components/Cloud';
+import Bio from './Components/Bio';
+import Tele from './Components/Tele';
+import Environ from './Components/Environ';
 
 
 
@@ -55,6 +60,16 @@ const App=()=>{
       <Route path="Mech" element={<Mech/>} />
       <Route path='Civil' element={<Civil/>} />
       <Route path='Robo' element={<Robo/>} />
+      <Route path='Network' element={<Network/>} />
+      <Route path='Cloud' element={<Cloud/>} />
+      <Route path='Bio' element={<Bio/>} />
+      <Route path='Tele' element={<Bio/>} />
+      <Route path='Environ' element={<Environ/>} />
+
+
+
+
+
 
 
       

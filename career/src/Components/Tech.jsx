@@ -13,11 +13,11 @@ function Tech() {
     { title: 'Mechanical Engineering', field: 'Mechanical Engineering', icon: '🔧', path: '/Mech' },
     { title: 'Civil Engineering', field: 'Civil Engineering', icon: '🏗️', path: '/Civil' },
     { title: 'Robotics', field: 'Robotics', icon: '🤖', path: '/Robo' },
-    { title: 'Network Engineering', field: 'Network Engineering', icon: '🌐', path: '/network-engineering' },
-    { title: 'Cloud Computing', field: 'Cloud Computing', icon: '☁️', path: '/cloud-computing' },
-    { title: 'Bioengineering', field: 'Bioengineering', icon: '🧬', path: '/bioengineering' },
-    { title: 'Telecommunications', field: 'Telecommunications', icon: '📡', path: '/telecommunications' },
-    { title: 'Environmental Engineering', field: 'Environmental Engineering', icon: '🌱', path: '/environmental-engineering' },
+    { title: 'Network Engineering', field: 'Network Engineering', icon: '🌐', path: '/Network' },
+    { title: 'Cloud Computing', field: 'Cloud Computing', icon: '☁️', path: '/Cloud' },
+    { title: 'Bioengineering', field: 'Bioengineering', icon: '🧬', path: '/Bio' },
+    { title: 'Telecommunications', field: 'Telecommunications', icon: '📡', path: '/Tele' },
+    { title: 'Environmental Engineering', field: 'Environmental Engineering', icon: '🌱', path: '/Environ' },
   ];
 
   return (

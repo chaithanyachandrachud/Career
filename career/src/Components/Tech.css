@@ -1,102 +1,101 @@
 
 .tech-container {
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    cursor: pointer;
-    animation: fadeIn 1s forwards; /* Fade-in animation */
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(20px);
   }
-  
-  @keyframes fadeIn {
-    0% {
-      transform: translateY(20px);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tech-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  animation: slideIn 0.5s forwards 0.5s; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.tech-container p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: fadeIn 0.8s forwards 0.8s;
+}
+
+.careers-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: fadeIn 1s forwards 1s;
+}
+
+.career-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: bounceIn 1s forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
     }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
   }
-  
-  .tech-container h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    animation: slideIn 0.5s forwards 0.5s; /* Slide-in animation */
+  100% {
+    transform: scale(1);
   }
-  
-  @keyframes slideIn {
-    0% {
-        transform: translateX(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .tech-container p {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    animation: fadeIn 0.8s forwards 0.8s;
-  }
-  
-  .careers-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    animation: fadeIn 1s forwards 1s;
-  }
-  
-  .career-card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    margin: 10px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: bounceIn 1s forwards;
-  }
-  
-  @keyframes bounceIn {
-    0% {
-      transform: scale(0.9);
-      }
-    60% {
-      transform: scale(1.05);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .career-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-  }
-  
-  .career-icon {
-    font-size: 3em;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .career-card:hover .career-icon {
-    transform: rotate(10deg); /* Rotate icon on hover */
-  }
-  
-  .career-info h3 {
-    font-size: 1.5em;
-    margin-bottom: 5px;
-    animation: slideIn 0.5s forwards 1.2s;
-  }
-  
-  .career-info p {
-    font-size: 1em;
-    color: #666;
-    animation: fadeIn 0.8s forwards 1.4s;
-  }
-  
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.career-icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.career-card:hover .career-icon {
+  transform: rotate(10deg); /* Rotate icon on hover */
+}
+
+.career-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  animation: slideIn 0.5s forwards 1.2s;
+}
+
+.career-info p {
+  font-size: 1em;
+  color: #666;
+  animation: fadeIn 0.8s forwards 1.4s;
+}
