@@ -5,14 +5,14 @@ function Contact() {
     name: '',
     email: '',
     phone: '',
-    subject: '',
+    subject: '', // subject
     message: '',
     contactMethod: 'email',
     educationLevel: '',
     location: '',
     consent: false,
     file: null,
-    preferredContactTime: '',
+    preferredContactTime: '', 
     socialMediaLinks: '',
   });
 

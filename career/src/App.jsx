@@ -17,6 +17,14 @@ import Science from './Components/Science';
 import Law from './Components/Law';
 import Skill from './Components/Skill';
 import Parent from './Components/Parent';
+import Soft from './Components/Soft';
+import Data from './Components/Data';
+import Cyber from "./Components/Cyber";
+import Electrical from './Components/Electrical';
+import Mech from './Components/Mech';
+import Civil from './Components/Civil';
+import Robo from "./Components/Robo";
+
 
 
 const App=()=>{
@@ -40,6 +48,20 @@ const App=()=>{
       <Route path="Skill" element={<Skill/>} />
       <Route path="Parent" element={<Parent/>} />
       <Route path="/" element={<Landingpage />} />
+      <Route path="Soft" element={<Soft/>} />
+      <Route path="Data" element={<Data/>} />
+      <Route path="Cyber" element={<Cyber/>} />
+      <Route path="Electrical" element={<Electrical/>} />
+      <Route path="Mech" element={<Mech/>} />
+      <Route path='Civil' element={<Civil/>} />
+      <Route path='Robo' element={<Robo/>} />
+
+
+      
+
+
+
+
 
 
 
