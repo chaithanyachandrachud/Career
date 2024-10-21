@@ -1,20 +1,23 @@
 import React from 'react';
-import './Tech.css'; // Ensure you have this CSS file for styling
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import './Tech.css';
 
 function Tech() {
+  const navigate = useNavigate(); // useNavigate hook for navigation
+
   const careers = [
-    { title: 'Software Development', field: 'Technology & Engineering', icon: '💻' },
-    { title: 'Data Science & AI', field: 'Data Science & AI', icon: '📊' },
-    { title: 'Cybersecurity', field: 'Cybersecurity', icon: '🔒' },
-    { title: 'Electrical Engineering', field: 'Electrical Engineering', icon: '⚡' },
-    { title: 'Mechanical Engineering', field: 'Mechanical Engineering', icon: '🔧' },
-    { title: 'Civil Engineering', field: 'Civil Engineering', icon: '🏗️' },
-    { title: 'Robotics', field: 'Robotics', icon: '🤖' },
-    { title: 'Network Engineering', field: 'Network Engineering', icon: '🌐' },
-    { title: 'Cloud Computing', field: 'Cloud Computing', icon: '☁️' },
-    { title: 'Bioengineering', field: 'Bioengineering', icon: '🧬' },
-    { title: 'Telecommunications', field: 'Telecommunications', icon: '📡' },
-    { title: 'Environmental Engineering', field: 'Environmental Engineering', icon: '🌱' },
+    { title: 'Software Development', field: 'Technology & Engineering', icon: '💻', path: '/Soft' },
+    { title: 'Data Science & AI', field: 'Data Science & AI', icon: '📊', path: '/Data' },
+    { title: 'Cybersecurity', field: 'Cybersecurity', icon: '🔒', path: '/Cyber' },
+    { title: 'Electrical Engineering', field: 'Electrical Engineering', icon: '⚡', path: '/Electrical' },
+    { title: 'Mechanical Engineering', field: 'Mechanical Engineering', icon: '🔧', path: '/Mech' },
+    { title: 'Civil Engineering', field: 'Civil Engineering', icon: '🏗️', path: '/Civil' },
+    { title: 'Robotics', field: 'Robotics', icon: '🤖', path: '/Robo' },
+    { title: 'Network Engineering', field: 'Network Engineering', icon: '🌐', path: '/Network' },
+    { title: 'Cloud Computing', field: 'Cloud Computing', icon: '☁️', path: '/Cloud' },
+    { title: 'Bioengineering', field: 'Bioengineering', icon: '🧬', path: '/Bio' },
+    { title: 'Telecommunications', field: 'Telecommunications', icon: '📡', path: '/Tele' },
+    { title: 'Environmental Engineering', field: 'Environmental Engineering', icon: '🌱', path: '/Environ' },
   ];
 
   return (
@@ -24,7 +27,11 @@ function Tech() {
 
       <div className="careers-container">
         {careers.map((career) => (
-          <div key={career.title} className="career-card">
+          <div 
+            key={career.title} 
+            className="career-card" 
+            onClick={() => navigate(career.path)} // Navigate to the corresponding career page
+          >
             <div className="career-icon">{career.icon}</div>
             <div className="career-info">
               <h3>{career.title}</h3>
