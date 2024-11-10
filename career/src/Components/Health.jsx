@@ -1,12 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 function Health() {
+  const navigate = useNavigate(); // useNavigate hook for navigation
+
   const careers = [
-    { title: 'Physician', field: 'Medicine & Healthcare', icon: '🩺' },
-    { title: 'Nurse', field: 'Nursing', icon: '👩‍⚕️' },
-    { title: 'Pharmacist', field: 'Pharmacy', icon: '💊' },
-    { title: 'Healthcare Administrator', field: 'Healthcare Management', icon: '🏥' },
-    { title: 'Physical Therapist', field: 'Rehabilitation', icon: '🧑‍🦼' },
+    { title: 'Physician', field: 'Medicine & Healthcare', icon: '🩺', path: '/Physician' },
+    { title: 'Nurse', field: 'Nursing', icon: '👩‍⚕️', path: '/Nurse' },
+    { title: 'Pharmacist', field: 'Pharmacy', icon: '💊', path: '/Pharmacist' },
+    { title: 'Healthcare Administrator', field: 'Healthcare Management', icon: '🏥', path: '/Admin' },
+    { title: 'Physical Therapist', field: 'Rehabilitation', icon: '🧑‍🦼', path: '/Therapist' },
   ];
 
   return (
@@ -16,7 +19,11 @@ function Health() {
 
       <div className="careers-container"> {/* Using the same class name "careers-container" */}
         {careers.map((career) => (
-          <div key={career.title} className="career-card"> {/* Reusing "career-card" */}
+          <div 
+            key={career.title} 
+            className="career-card" 
+            onClick={() => navigate(career.path)} // Add navigation on click
+          >
             <div className="career-icon">{career.icon}</div>
             <div className="career-info">
               <h3>{career.title}</h3>

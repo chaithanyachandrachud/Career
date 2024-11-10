@@ -37,7 +37,7 @@ function LandingPage() {
           <ul className="flex space-x-8" style={{ display: "flex", gap: "2rem" }}>
             <li>
               <Link
-                to="/feedback"
+                to="/Feedback"
                 style={{
                   color: "black",
                   fontSize: "1.2rem",

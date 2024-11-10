@@ -29,6 +29,10 @@ import Cloud from './Components/Cloud';
 import Bio from './Components/Bio';
 import Tele from './Components/Tele';
 import Environ from './Components/Environ';
+import Physician from './Components/Physician';
+import Nurse from './Components/Nurse';
+import Feedback from './Components/Feedback';
+import Ass1 from './Components/Ass1';
 
 
 
@@ -65,22 +69,15 @@ const App=()=>{
       <Route path='Bio' element={<Bio/>} />
       <Route path='Tele' element={<Bio/>} />
       <Route path='Environ' element={<Environ/>} />
+      <Route path='Physician' element={<Physician/>} />
+      <Route path='Nurse' element={<Nurse/>} />
+      <Route path='Feedback' element={<Feedback/>} />
+      <Route path='Ass1' element={<Ass1/>} />
 
 
 
 
-
-
-
-      
-
-
-
-
-
-
-
-      </Routes>
+    </Routes>
     </Router>
   )
 }

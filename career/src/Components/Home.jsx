@@ -10,19 +10,18 @@ function Home() {
     identity: '',
     career: '',
   });
-
-  const navigate = useNavigate(); // Initialize useNavigate
+  const [showAssistant, setShowAssistant] = useState(false); // State for AI Assistant visibility
+  const navigate = useNavigate();
 
   const handleNext = () => {
     if (step === 3 && formData.identity === 'Parent') {
-      navigate('/Parent');  // Navigate to Parent component
+      navigate('/Parent');
     } else if (step === 4) {
-      navigateToCareerPage(); // Navigate to career page when the final step is reached
+      navigateToCareerPage();
     } else {
       setStep(step + 1);
     }
   };
-  
 
   const handlePrev = () => {
     setStep(step - 1);
@@ -158,6 +157,26 @@ function Home() {
           </button>
         </div>
       </div>
+
+      {/* AI Assistant Button */}
+      <div className="ai-assistant">
+        <button onClick={() => setShowAssistant(true)} className="ai-button">
+          Need More Assistance? Ask AI 🤖
+        </button>
+      </div>
+
+      {/* AI Assistant Pop-up */}
+      {showAssistant && (
+        <div className="ai-popup">
+          <div className="ai-popup-content">
+            <h2>AI Assistant</h2>
+            <p>How can I help you today?</p>
+            <button onClick={() => setShowAssistant(false)} className="close-button">
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

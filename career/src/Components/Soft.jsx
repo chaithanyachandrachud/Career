@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Soft.css'; // Importing CSS for styling
+import { Link } from 'react-router-dom';
 
-const Soft= () => {
+const Soft = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const scopes = [
     {
       title: "Bachelor’s Degree in Computer Science/IT",
@@ -33,9 +36,30 @@ const Soft= () => {
     }
   ];
 
+  const handleModal = () => {
+    setShowModal(!showModal);
+  };
+
   return (
     <div className="soft-container">
       <h1 className="soft-title">Explore Your Software Development Opportunities</h1>
+      <button className="assessment-button" onClick={handleModal}>
+        Click here for assessment tools
+      </button>
+
+      {showModal && (
+        <div className="modal-overlay" onClick={handleModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <h2>Assessment Tools</h2>
+            <p>Here you can explore various assessment tools for gauging your skills in software development, including coding challenges, online tests, and project-based assessments.</p>
+            <Link to="/Ass1"><button className="close-button" onClick={handleModal}>Start</button></Link>
+            <button className="close-button" onClick={handleModal}>Close</button>
+
+            
+          </div>
+        </div>
+      )}
+
       <div className="scopes-list">
         {scopes.map((scope, index) => (
           <div key={index} className="scope-card">
