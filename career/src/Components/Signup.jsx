@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link here
 import './Signup.css'; // Ensure this file exists and is correctly linked
-import sign from "../assets/sign.jpg"
+import sign from "../assets/sign.jpg";
 
 function Signup() {
   return (
@@ -26,10 +27,12 @@ function Signup() {
                 <label htmlFor="confirm-password">Confirm Password</label>
                 <input type="password" id="confirm-password" required />
               </div>
-              <button type="submit" className="signup-button">Sign Up</button>
+              <Link to="/Login">
+                <button type="button" className="signup-button">Sign Up</button>
+              </Link>
             </form>
             <p className="login-link">
-              Already have an account? <a href="/login">Log in</a>
+              Already have an account? <Link to="/Login">Log in</Link>
             </p>
           </div>
         </div>
