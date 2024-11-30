@@ -33,6 +33,22 @@ import Physician from './Components/Physician';
 import Nurse from './Components/Nurse';
 import Feedback from './Components/Feedback';
 import Ass1 from './Components/Ass1';
+import Pharmacist from './Components/Pharmacist';
+import Admin from './Components/Admin';
+import Therapist from './Components/Therapist';
+import BusinessAnalyst from './Components/BusinessAnalyst';
+import ProductManager from './Components/ProductManager';
+import FinancialAnalyst from './Components/FinancialAnalyst';
+import ManagementConsultant from './Components/ManagementConsultant';
+import Accountant from './Components/Accountant';
+import Graphicdesigner from './Components/Graphicdesigner';
+import Videoproducer from './Components/Videoproducer';
+import Socialmediamanager from './Components/Socialmediamanager';
+import Contentcreator from './Components/Contentcreator';
+import Artdirector from './Components/Artdirector';
+import Teacher from './Components/Teacher';
+
+
 
 
 
@@ -73,10 +89,30 @@ const App=()=>{
       <Route path='Nurse' element={<Nurse/>} />
       <Route path='Feedback' element={<Feedback/>} />
       <Route path='Ass1' element={<Ass1/>} />
+      <Route path='Pharmacist' element={<Pharmacist/>} />
+      <Route path='Admin' element={<Admin/>} />
+      <Route path='Therapist' element={<Therapist/>} />
+      <Route path='BusinessAnalyst' element={<BusinessAnalyst/>} />
+      <Route path='ProductManager' element={<ProductManager/>} />
+      <Route path='FinancialAnalyst' element={<FinancialAnalyst/>} />
+      <Route path='Accountant' element={<Accountant/>} />
+      <Route path='Graphicdesigner' element={<Graphicdesigner/>} />
+      <Route path='Videoproducer' element={<Videoproducer/>} />
+      <Route path='Contentcreator' element={<Contentcreator/>} />
+      <Route path='Socialmediamanager' element={<Socialmediamanager/>} />
+      <Route path='Artdirector' element={<Artdirector/>} />
+      <Route path='Teacher' element={<Teacher/>} />
+      <Route path='ManagementConsultant' element={<ManagementConsultant/>} />
 
 
 
 
+
+
+
+
+    
+                                                                                
     </Routes>
     </Router>
   )
