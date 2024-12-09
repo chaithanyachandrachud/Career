@@ -1,22 +1,32 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 function Science() {
+  const navigate = useNavigate(); // useNavigate hook for navigation
+
   const careers = [
-    { title: 'Research Scientist', field: 'Scientific Research & Development', icon: '🔬' },
-    { title: 'Biologist', field: 'Biological Sciences', icon: '🧬' },
-    { title: 'Environmental Scientist', field: 'Environmental Science', icon: '🌿' },
-    { title: 'Chemist', field: 'Chemistry', icon: '⚗️' },
-    { title: 'Epidemiologist', field: 'Public Health & Epidemiology', icon: '🦠' },
+    { title: 'Research Scientist', field: 'Scientific Research & Development', icon: '🔬', path: '/ResearchScientist' },
+    { title: 'Biologist', field: 'Biological Sciences', icon: '🧬', path: '/Biologist' },
+    { title: 'Environmental Scientist', field: 'Environmental Science', icon: '🌿', path: '/EnvironmentalScientist' },
+    { title: 'Chemist', field: 'Chemistry', icon: '⚗️', path: '/Chemist' },
+    { title: 'Epidemiologist', field: 'Public Health & Epidemiology', icon: '🦠', path: '/Epidemiologist' },
   ];
 
   return (
-    <div className="tech-container"> {/* Reusing the same class name "tech-container" */}
+    <div className="tech-container">
       <h1>Science Careers</h1>
-      <p>Explore the diverse and exciting opportunities available in Science. Choose a specialization that aligns with your passion for discovery and innovation.</p>
+      <p>
+        Explore the diverse and exciting opportunities available in Science. Choose a specialization
+        that aligns with your passion for discovery and innovation.
+      </p>
 
-      <div className="careers-container"> {/* Reusing the same class name "careers-container" */}
+      <div className="careers-container">
         {careers.map((career) => (
-          <div key={career.title} className="career-card"> {/* Reusing "career-card" */}
+          <div
+            key={career.title}
+            className="career-card"
+            onClick={() => navigate(career.path)} // Navigate to respective paths
+          >
             <div className="career-icon">{career.icon}</div>
             <div className="career-info">
               <h3>{career.title}</h3>
