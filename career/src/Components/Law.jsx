@@ -1,22 +1,29 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 function Law() {
+  const navigate = useNavigate(); // useNavigate hook for navigation
+
   const careers = [
-    { title: 'Lawyer', field: 'Legal Practice & Litigation', icon: '⚖️' },
-    { title: 'Policy Analyst', field: 'Public Policy & Law', icon: '📜' },
-    { title: 'Judge', field: 'Judiciary', icon: '🧑‍⚖️' },
-    { title: 'Compliance Officer', field: 'Regulatory Compliance', icon: '📋' },
-    { title: 'Public Relations Specialist', field: 'Law & Public Relations', icon: '📣' },
-  ];
+    { title: 'Lawyer', field: 'Legal Practice & Litigation', icon: '⚖️', path: '/Lawyer' },
+    { title: 'Policy Analyst', field: 'Public Policy & Law', icon: '📜', path: '/Policyanalyst' },
+    { title: 'Judge', field: 'Judiciary', icon: '🧑‍⚖️', path: '/Judge' },
+    { title: 'Compliance Officer', field: 'Regulatory Compliance', icon: '📋', path: '/Complianceofficer' },
+    { title: 'Public Relations Specialist', field: 'Law & Public Relations', icon: '📣', path: '/Prespecialist' },
+   ];
 
   return (
-    <div className="tech-container"> {/* Reusing the same class name "tech-container" */}
+    <div className="tech-container">
       <h1>Law Careers</h1>
       <p>Explore the various career paths in the field of law. From legal practice to public relations, there are many opportunities to make a difference.</p>
 
-      <div className="careers-container"> {/* Reusing the same class name "careers-container" */}
+      <div className="careers-container">
         {careers.map((career) => (
-          <div key={career.title} className="career-card"> {/* Reusing "career-card" */}
+          <div
+            key={career.title}
+            className="career-card"
+            onClick={() => navigate(career.path)} // Navigate to the respective path on click
+          >
             <div className="career-icon">{career.icon}</div>
             <div className="career-info">
               <h3>{career.title}</h3>

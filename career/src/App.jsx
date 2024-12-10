@@ -19,6 +19,9 @@ import Science from './Components/Science';
 import Law from './Components/Law';
 import Skill from './Components/Skill';
 import Parent from './Components/Parent';
+import Electrician from './Components/Electrician';
+import Plumber from './Components/Plumber';
+import Carpenter from './Components/Carpenter';
 
 // Specializations
 import Soft from './Components/Soft';
@@ -43,6 +46,9 @@ import Pharmacist from './Components/Pharmacist';
 import Therapist from './Components/Therapist';
 import Admin from './Components/Admin';
 import Biologist from './Components/Biologist';
+import Lawyer from './Components/Lawyer';
+import Policyanalyst from './Components/Policyanalyst';
+import Judge from './Components/Judge';
 
 // Business and Management
 import BusinessAnalyst from './Components/BusinessAnalyst';
@@ -57,6 +63,7 @@ import Videoproducer from './Components/Videoproducer';
 import Socialmediamanager from './Components/Socialmediamanager';
 import Contentcreator from './Components/Contentcreator';
 import Artdirector from './Components/Artdirector';
+import HVACTechnician from './Components/HVACTechnician';
 
 // Educational Roles
 import Teacher from './Components/Teacher';
@@ -65,6 +72,10 @@ import Designer from './Components/Designer';
 import Professor from './Components/Professor';
 import ResearchScientist from './Components/ResearchScientist';
 import EnvironmentalScientist from './Components/EnvironmentalScientist';
+import Chemist from './Components/Chemist';
+import Complianceofficer from './Components/Complianceofficer';
+import Epidemiologist from './Components/Epidemiologist';
+import Prespecialist from './Components/Prespecialist';
 
 // Feedback and iscellaneous
 import Feedback from './Components/Feedback';
@@ -99,6 +110,15 @@ const App = () => {
         <Route path="Law" element={<Law />} />
         <Route path="Skill" element={<Skill />} />
         <Route path="Parent" element={<Parent />} />
+        <Route path="Electrician" element={<Electrician/>} />
+        <Route path="Plumber" element={<Plumber/>} />
+        <Route path="Carpenter" element={<Carpenter/>} />
+
+        
+
+
+        
+
 
         {/* Specializations */}
         <Route path="Soft" element={<Soft />} />
@@ -114,12 +134,21 @@ const App = () => {
         <Route path="Tele" element={<Tele />} />
         <Route path="Environ" element={<Environ />} />
 
+
         {/* Professions */}
         <Route path="Physician" element={<Physician />} />
         <Route path="Nurse" element={<Nurse />} />
         <Route path="Pharmacist" element={<Pharmacist />} />
         <Route path="Therapist" element={<Therapist />} />
         <Route path="Admin" element={<Admin />} />
+        <Route path="Lawyer" element={<Lawyer />} />
+        <Route path="Policyanalyst" element={<Policyanalyst />} />
+        <Route path="Complianceofficer" element={<Complianceofficer/>} />
+        <Route path="Judge" element={<Judge/>} />
+        <Route path="Prespecialist" element={<Prespecialist/>} />
+
+
+
 
         {/* Business and Management */}
         <Route path="BusinessAnalyst" element={<BusinessAnalyst />} />
@@ -135,6 +164,7 @@ const App = () => {
         <Route path="Biologist" element={<Biologist />} />
         <Route path="Contentcreator" element={<Contentcreator />} />
         <Route path="Artdirector" element={<Artdirector />} />
+        <Route path="HVACTechnician" element={<HVACTechnician/>} />
 
 
         {/* Educational Roles */}
@@ -144,6 +174,10 @@ const App = () => {
         <Route path="Professor" element={<Professor />} />
         <Route path="ResearchScientist" element={<ResearchScientist/>} />
         <Route path="EnvironmentalScientist" element={<EnvironmentalScientist />} />
+        <Route path="Chemist" element={<Chemist />} />
+        <Route path="Epidemiologist" element={<Epidemiologist />} />
+
+
 
         
 
