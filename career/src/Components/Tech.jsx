@@ -1,9 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { useNavigate } from 'react-router-dom';
 import './Tech.css';
 
 function Tech() {
   const navigate = useNavigate(); // useNavigate hook for navigation
+  <button className="counseling-button" onClick={handleCounselingClick}>Need More Counseling? Click Here</button>
+
 
   const careers = [
     { title: 'Software Development', field: 'Technology & Engineering', icon: '💻', path: '/Soft' },
@@ -19,6 +21,10 @@ function Tech() {
     { title: 'Telecommunications', field: 'Telecommunications', icon: '📡', path: '/Tele' },
     { title: 'Environmental Engineering', field: 'Environmental Engineering', icon: '🌱', path: '/Environ' },
   ];
+
+  const handleCounselingClick = () => {
+    navigate('/meet'); // Navigate to the meet page
+  };
 
   return (
     <div className="tech-container">
@@ -40,6 +46,7 @@ function Tech() {
           </div>
         ))}
       </div>
+
     </div>
   );
 }

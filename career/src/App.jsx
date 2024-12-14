@@ -81,6 +81,8 @@ import Prespecialist from './Components/Prespecialist';
 import Feedback from './Components/Feedback';
 import Ass1 from './Components/Ass1';
 import Counselors from './Components/Counselors';
+import Chatgpt from './Components/Chatgpt';
+import Meet from './Components/Meet';
 
 
 // 404 Component
@@ -184,7 +186,9 @@ const App = () => {
         {/* Feedback and Miscellaneous */}
         <Route path="Feedback" element={<Feedback />} />
         <Route path="Ass1" element={<Ass1 />} />
+        <Route path="Chatgpt" element={<Chatgpt />} />
         <Route path="Counselors" element={<Counselors />} />
+        <Route path="Meet" element={<Meet />} />
 
         {/* 404 Route */}
         <Route path="*" element={<NotFound />} />
