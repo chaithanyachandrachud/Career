@@ -11,11 +11,17 @@ function Law() {
     { title: 'Compliance Officer', field: 'Regulatory Compliance', icon: '📋', path: '/Complianceofficer' },
     { title: 'Public Relations Specialist', field: 'Law & Public Relations', icon: '📣', path: '/Prespecialist' },
    ];
+   const handleCounselingClick = () => {
+    navigate('/meet'); // Navigate to the meet page
+  };
 
   return (
     <div className="tech-container">
       <h1>Law Careers</h1>
       <p>Explore the various career paths in the field of law. From legal practice to public relations, there are many opportunities to make a difference.</p>
+      <button className="counseling-button" onClick={handleCounselingClick}>
+        Need More Counseling? Click Here
+      </button>
 
       <div className="careers-container">
         {careers.map((career) => (

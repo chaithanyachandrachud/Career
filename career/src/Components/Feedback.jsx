@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './Feedback.css'; // Import a CSS file for styling
 
 function Feedback() {
@@ -7,15 +8,29 @@ function Feedback() {
   const [feedback, setFeedback] = useState('');
   const [fieldOfStudy, setFieldOfStudy] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic (e.g., send data to an API)
-    console.log({ name, email, feedback, fieldOfStudy });
-    // Reset form fields after submission
-    setName('');
-    setEmail('');
-    setFeedback('');
-    setFieldOfStudy('');
+
+    const feedbackData = {
+      name,
+      email,
+      feedback,
+      fieldOfStudy
+    };
+
+    try {
+      const response = await axios.post('http://localhost:3000/api/feedback', feedbackData); // Updated URL
+      console.log(response.data); // Log server response
+      alert('Feedback submitted successfully!');
+      // Reset form fields after submission
+      setName('');
+      setEmail('');
+      setFeedback('');
+      setFieldOfStudy('');
+    } catch (error) {
+      console.error('Error submitting feedback:', error);
+      alert('An error occurred while submitting your feedback. Please try again later.');
+    }
   };
 
   return (

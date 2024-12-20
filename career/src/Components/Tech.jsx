@@ -1,9 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { useNavigate } from 'react-router-dom';
 import './Tech.css';
 
 function Tech() {
+  
   const navigate = useNavigate(); // useNavigate hook for navigation
+  
 
   const careers = [
     { title: 'Software Development', field: 'Technology & Engineering', icon: '💻', path: '/Soft' },
@@ -20,10 +22,17 @@ function Tech() {
     { title: 'Environmental Engineering', field: 'Environmental Engineering', icon: '🌱', path: '/Environ' },
   ];
 
+  const handleCounselingClick = () => {
+    navigate('/meet'); // Navigate to the meet page
+  };
+
   return (
     <div className="tech-container">
       <h1>Technology and Engineering</h1>
       <p>Explore the exciting opportunities available in the field of Technology and Engineering. Choose a specialization that suits your interests and talents.</p>
+      <button className="counseling-button" onClick={handleCounselingClick}>
+        Need More Counseling? Click Here
+      </button>
 
       <div className="careers-container">
         {careers.map((career) => (

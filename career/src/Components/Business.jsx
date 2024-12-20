@@ -12,10 +12,18 @@ function Business() {
     { title: 'Accountant', field: 'Accounting', icon: '🧾', path: '/Accountant' },
   ];
 
+  const handleCounselingClick = () => {
+    navigate('/meet'); // Navigate to the meet page
+  };
+
+
   return (
     <div className="tech-container">
       <h1>Business and Finance</h1>
       <p>Explore exciting careers in Business and Finance. These fields drive organizational success and economic growth.</p>
+      <button className="counseling-button" onClick={handleCounselingClick}>
+        Need More Counseling? Click Here
+      </button>
 
       <div className="careers-container">
         {careers.map((career) => (

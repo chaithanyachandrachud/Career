@@ -12,10 +12,17 @@ function Arts() {
     { title: 'Art Director', field: 'Creative Direction', icon: '🖌️', path: '/Artdirector' },
   ];
 
+  const handleCounselingClick = () => {
+    navigate('/meet'); // Navigate to the meet page
+  };
+
   return (
     <div className="tech-container">
       <h1>Arts and Media</h1>
       <p>Discover the exciting careers in Arts and Media, where creativity meets innovation. These roles are perfect for those with a passion for visual storytelling, content creation, and design.</p>
+      <button className="counseling-button" onClick={handleCounselingClick}>
+        Need More Counseling? Click Here
+      </button>
 
       <div className="careers-container">
         {careers.map((career) => (

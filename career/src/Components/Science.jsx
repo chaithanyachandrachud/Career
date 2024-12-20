@@ -11,6 +11,9 @@ function Science() {
     { title: 'Chemist', field: 'Chemistry', icon: '⚗️', path: '/Chemist' },
     { title: 'Epidemiologist', field: 'Public Health & Epidemiology', icon: '🦠', path: '/Epidemiologist' },
   ];
+  const handleCounselingClick = () => {
+    navigate('/meet'); // Navigate to the meet page
+  };
 
   return (
     <div className="tech-container">
@@ -19,6 +22,10 @@ function Science() {
         Explore the diverse and exciting opportunities available in Science. Choose a specialization
         that aligns with your passion for discovery and innovation.
       </p>
+
+      <button className="counseling-button" onClick={handleCounselingClick}>
+        Need More Counseling? Click Here
+      </button>
 
       <div className="careers-container">
         {careers.map((career) => (

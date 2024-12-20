@@ -109,7 +109,7 @@ function Home() {
         <div className="form-step">
           <h2>Which career do you choose?</h2>
           <div className="options">
-            {['Technology and Engineering', 'Healthcare and Medicine', 'Business and Finance', 'Arts and Media', 'Education and Training', 'Science and Research', 'Law and Public Policy', 'Skilled Trades and Services'].map((option) => (
+            {['Technology and Engineering', 'Healthcare and Medicine', 'Business and Finance', 'Arts and Media', 'Education and Training', 'Science and Research', 'Law and Public Policy', ].map((option) => (
               <button
                 key={option}
                 name="career"
@@ -160,10 +160,15 @@ function Home() {
 
       {/* AI Assistant Button */}
       <div className="ai-assistant">
-        <button onClick={() => setShowAssistant(true)} className="ai-button">
-          Need More Assistance? Ask AI 🤖
-        </button>
-      </div>
+  <button
+    onClick={() => window.open('https://chat.openai.com/', '_blank')}
+    className="ai-button"
+  >
+    Need More Assistance? Ask AI 🤖
+  </button>
+</div>
+
+
 
       {/* AI Assistant Pop-up */}
       {showAssistant && (
