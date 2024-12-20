@@ -11,11 +11,18 @@ function Education() {
     { title: 'College Professor', field: 'Higher Education', icon: '🏛️', path: '/Professor' },
     { title: 'School Counselor', field: 'Student Guidance & Counseling', icon: '🧑‍🎓', path: '/Counselors' },
   ];
+  const handleCounselingClick = () => {
+    navigate('/meet'); // Navigate to the meet page
+  };
+
 
   return (
     <div className="tech-container">
       <h1>Education and Learning</h1>
       <p>Explore careers in Education. Choose a path that aligns with your passion for teaching, mentoring, and helping students succeed.</p>
+      <button className="counseling-button" onClick={handleCounselingClick}>
+        Need More Counseling? Click Here
+      </button>
 
       <div className="careers-container">
         {careers.map((career) => (
