@@ -1,0 +1,273 @@
+
+.tech-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tech-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  animation: slideIn 0.5s forwards 0.5s; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.tech-container p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: fadeIn 0.8s forwards 0.8s;
+}
+
+.careers-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: fadeIn 1s forwards 1s;
+}
+
+.career-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: bounceIn 1s forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
+    }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.career-icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.career-card:hover .career-icon {
+  transform: rotate(10deg); /* Rotate icon on hover */
+}
+
+.career-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  animation: slideIn 0.5s forwards 1.2s;
+}
+
+.career-info p {
+  font-size: 1em;
+  color: #666;
+  animation: fadeIn 0.8s forwards 1.4s;
+}
+
+.ass1-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  animation: slideIn 0.5s forwards 0.5s; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.motivational-text {
+  font-size: 1.2em;
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.instruction-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.instruction-box h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.instruction-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.instruction-box li {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.option-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  margin: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.option-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.option-box h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.option-box p {
+  font-size: 1em;
+  color: #777;
+}
+
+.selected-option-container {
+  background-color: #f1f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.selected-option-container h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.selected-option-container p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+}
+
+.counseling-button {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 15px 25px; /* Padding for a better look */
+  font-size: 18px; /* Slightly larger font */
+  font-weight: bold; /* Bold text */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  position: relative;
+  overflow: hidden; /* Hide the animated pseudo-element overflow */
+}
+
+.counseling-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #81c784, #388e3c);
+  z-index: -1; /* Place the pseudo-element behind the text */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+.counseling-button:hover::before {
+  transform: scaleX(1);
+}
+
+.counseling-button:hover {
+  color: #fff; /* Ensure text stays white */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.counseling-button:active {
+  transform: scale(0.98); /* Slightly shrink on click */
+}

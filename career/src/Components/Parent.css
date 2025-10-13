@@ -1,0 +1,119 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f7f8f9, #e2e7f3);
+    color: #333;
+}
+
+/* Form container */
+.parent-form-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4A90E2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    color: #4A90E2;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #4A90E2;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #4A90E2;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #E94E77;
+    outline: none;
+    box-shadow: 0 0 5px rgba(233, 78, 119, 0.5);
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Button styles */
+button {
+    background: linear-gradient(135deg, #4A90E2, #E94E77);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #E94E77, #4A90E2);
+    transform: translateY(-3px);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .parent-form-container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

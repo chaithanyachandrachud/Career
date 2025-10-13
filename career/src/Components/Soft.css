@@ -1,0 +1,107 @@
+.soft-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .soft-title {
+    text-align: center;
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .scopes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .scope-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.3s ease;
+  }
+  
+  .scope-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .scope-title {
+    font-size: 24px;
+    color: #2980b9;
+    margin-bottom: 10px;
+  }
+  
+  .scope-description {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
+  @media (max-width: 768px) {
+    .scopes-list {
+      flex-direction: column;
+    }
+  
+    .scope-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+.assessment-button {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  height: 100px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.assessment-button:hover {
+  background-color: #0056b3;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.close-button {
+  margin-top: 10px;
+  padding: 5px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #c82333;
+}
